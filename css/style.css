@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500;600;700;800&family=Inter:wght@900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* GENERAL */
+
+body {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 80px auto 50px;
+}
+
+html{
+    height: 100%;    
+    font-family: 'Inter', sans-serif;
+}
+
+main {
+    background-image: url(../asset/img/fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+footer {
+    background-color: #D9534F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* NAVBAR MOBILE */
+
+.carrito_navbar {
+    display: none;
+}
+
+.navbar {
+    background-color: #D9534F;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo_navbar img {
+    width: 80px;
+    padding-left: .3125rem;
+    padding-top: 5px;
+}
+
+.menu_navbar {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #D9534F;
+    position: absolute;
+    list-style: none;
+}
+
+.menu_navbar li {
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.menu_navbar li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    
+}
+
+.navbar label img{
+    justify-self: center;
+}
+.navbar label {
+    cursor: pointer;
+    margin-right: 25px;
+    background-color: #D9534F;
+    box-shadow: 0px 0px 10px #a03d39;
+    padding-bottom: 4px;
+    padding-top: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 10px;
+}
+
+#toggle {
+    display:none ;
+}
+
+
+#toggle:checked ~ .menu_navbar {
+    background-color: #a03d39;
+    display: flex;
+    top: 80px;
+}
+
+
+/* FOOTER */
+
+.rrss_footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/* INDEX */
+
+
