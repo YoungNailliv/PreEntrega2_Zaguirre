@@ -232,12 +232,13 @@ footer {
 .card_nosotros {
     align-self: center;
     width: 310px;
+    height: 400px;
     text-align: center;
     background-color: #D9534F;
     box-shadow: -3px 5px #a03d39;
     display: flex;
     flex-direction: column;
-    gap: .625rem;
+    gap: .3125rem;
     padding-top: 10px;
     border-radius: 50px;
     margin-bottom: 50px;
@@ -245,13 +246,14 @@ footer {
 .card_nosotros h2 {
     color: white;
     text-decoration: underline;
+    margin-bottom: 15px;
 }
 
 .card_nosotros p {
     font-size: 14px;
     align-self: center;
     width: 250px;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
 }
 
 /* TIENDA */
@@ -358,11 +360,71 @@ footer {
     background-color: #FFAD60;
 }
 
+/* Contacto */
+.main_contacto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #632523;
+    gap: 1.875rem;
+}
+
+.main_contacto iframe {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.formulario_contacto {
+    background-color: #96CEB4;
+    box-shadow: -5px 5px 0 #3a5045;
+    width: 300px;
+    height: 380px;
+    border-radius: 20px;
+    margin-top: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
 
 
+.formulario_contacto input {
+    width: 250px;
+    height: 25px;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-top: 8px;
+}
 
+.formulario_contacto label {
+    margin-left: 24px;
+}
 
+#mensaje {
+    height: 225px;
+}
 
+.info_contacto {
+    position: relative;
+    margin-top: 20px;
+}
+
+.info_contacto img {
+    width: 300px;
+}
+
+.texto_contacto {
+    width: 250px;
+    font-size: 14px;
+    position: absolute;
+    top: 70px;
+    left: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: .9375rem;
+    color: #FFEEAD;
+}
 
 
 
@@ -483,6 +545,9 @@ footer {
     .banner_feria_mobile {
         display: none;
     }
+    .navbar_contacto {
+        background-color: #632523;
+    }
 }
 
 
@@ -490,6 +555,13 @@ footer {
     .main_nosotros {
         display: flex;
         flex-direction: row;
+    }
+
+    .main_contacto {
+        background-color: #63252300;
+    }
+    .navbar_contacto {
+        background-color: #63252300;
     }
 }
 
@@ -556,6 +628,7 @@ footer {
 
     .card_nosotros {
         width: 400px;
+        height: 700px;
     }
     .card_nosotros h2 {
         font-size: 32px;
@@ -563,5 +636,48 @@ footer {
 
     .card_nosotros p {
         font-size: 20px;
+    }
+
+    .main_contacto iframe {
+        width: 440px;
+        height: 440px;
+        flex-direction: row;
+        justify-content: center;
+        gap: 12.5rem;
+    }
+
+    .info_contacto {
+        width: 400px;
+    }
+    .info_contacto img {
+        width: 400px;
+    }
+
+    .texto_contacto {
+        left: 60px;
+        top: 100px;
+        width: 330px;
+        font-size: 20px;
+    }
+
+    .formulario_contacto {
+        width: 400px;
+        height: 440px;
+    }
+
+    .formulario_contacto label {
+        margin-left: 24px;
+        font-size: 30px;
+    }
+    
+    #mensaje {
+        height: 210px;
+    }
+    .formulario_contacto input {
+        width: 330px;
+        height: 40px;
+        border-radius: 20px;
+        margin-left: 20px;
+        margin-top: 8px;
     }
 }
