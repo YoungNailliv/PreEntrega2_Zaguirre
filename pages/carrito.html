@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header> 
-        <nav class="navbar">
+    <header class="navbar_carrito"> 
+        <nav class="navbar navbar_carrito">
             <a href="../index.html" class="logo_navbar"><img src="../asset/img/Logo.png" alt=""></a>
             
             <input id="toggle" type="checkbox">
@@ -24,7 +24,93 @@
 
         </nav>
     </header>
-    <main>
+    <main class="main_carrito">
+        <section class="contenedor_carrito">
+            <h1>Cesta de compra</h1>
+            <div class="contenedor_productos">
+                <div class="productos">
+                    <div class="encabezados_carrito">
+                        <ul>
+                            <li>Producto</li>
+                            <li>Precio</li>
+                            <li>Cantidad</li>
+                            <li>Total</li>
+                        </ul>
+                    </div>
+                    <hr class="linea">
+                    <div class="producto">
+                        <ul>
+                            <li class="foto_carrito"><img src="../asset/img/Rectangle 19.png" alt=""></li>
+                            <li>Salsa 500ml</li>
+                            <li>$3000</li>
+                            <li>
+                                <div class="boton_carrito">
+                                    <button class="boton_mas">+</button>
+                                    <input type="number">
+                                    <button class="boton_menos">-</button>
+                                </div>
+                            </li>
+                            <li>$3000</li>
+                        </ul>
+                    </div>
+                    <hr class="linea">
+                    <div class="producto">
+                        <ul>
+                            <li class="foto_carrito"><img src="../asset/img/Rectangle 19.png" alt=""></li>
+                            <li>Ghee 400gr</li>
+                            <li>$5000</li>
+                            <li>
+                                <div class="boton_carrito">
+                                    <button class="boton_mas">+</button>
+                                    <input type="number">
+                                    <button class="boton_menos">-</button>
+                                </div>
+                            </li>
+                            <li>$5000</li>
+                        </ul>
+                    </div>
+                    <hr class="linea">
+                    <div class="producto">
+                        <ul>
+                            <li class="foto_carrito"><img src="../asset/img/Rectangle 19.png" alt=""></li>
+                            <li>Salsa 500ml</li>
+                            <li>$3000</li>
+                            <li>
+                                <div class="boton_carrito">
+                                    <button class="boton_mas">+</button>
+                                    <input type="number">
+                                    <button class="boton_menos">-</button>
+                                </div>
+                            </li>
+                            <li>$3000</li>
+                        </ul>
+                    </div>
+                    <div class="checkout">
+                        <h2>Resumen</h2>
+                        <ul>
+                            <li>Subtotal</li>
+                            <li>$14.000</li>
+                        </ul>
+                        <ul>
+                            <li>Envio</li>
+                            <li>$3000</li>
+                        </ul>
+                        <ul>
+                            <li>Cupon</li>
+                            <li>-$0</li>
+                        </ul>
+                        <input type="text">
+                        <button>INGRESAR CUPON</button>
+                    </div>
+                    <div class="total_checkout">
+                        <ul>
+                            <li>TOTAL:</li>
+                            <li>$17.000</li>
+                        </ul>
+                    </div>
+                </div>
+                    <button class="boton_pagar">PAGAR</button>
+        </section>
 
     </main>
 
